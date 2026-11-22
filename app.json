@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "DeliveryOfThings",
-    "slug": "DeliveryOfThings",
+    "name": "DoT",
+    "slug": "DoT",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "icon": "./assets/icons/logo.png",
+    "scheme": "DoT",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -15,7 +15,13 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDlDH30chD_FFQ3ewtahu3-kSot1S3vOX0"
+        }
+      },
+      "package": "com.anonymous.DoT"
     },
     "web": {
       "bundler": "metro",

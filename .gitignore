@@ -17,6 +17,21 @@ expo-env.d.ts
 *.key
 *.mobileprovision
 
+# Android build output
+android/.gradle/
+android/build/
+android/app/build/
+android/app/.cxx/
+android/local.properties
+android/.idea/
+*.apk
+*.aab
+*.hprof
+
+# iOS build output
+ios/Pods/
+ios/build/
+
 # Metro
 .metro-health-check*
 
@@ -24,15 +39,27 @@ expo-env.d.ts
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+*.log
 
-# macOS
+# macOS / Windows
 .DS_Store
+Thumbs.db
 *.pem
 
-# local env files
+# IDE
+.vscode/
+.idea/
+
+# env files (secrets)
+.env
 .env*.local
+backend/.env
 
 # typescript
 *.tsbuildinfo
 
 app-example
+
+# stray empty files accidentally created in project root
+/android.os.Handler
+/com.facebook.*
